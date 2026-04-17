@@ -35,7 +35,8 @@ class SistemParkirQueue:
         print(f"✅ Kendaraan {jenis_kendaraan} dengan plat {nomor_plat} berhasil masuk.")
         print(f"   Waktu masuk : {kendaraan['waktu_masuk'].strftime('%H:%M:%S')}")
         print(f"   Slot terisi  : {len(self.queue)}/{self.kapasitas}")
-        return True 
+        return True
+        
 def parkir_keluar(self):
         if self.is_empty():
             print("❌ Parkiran kosong! Tidak ada kendaraan yang bisa keluar.")
