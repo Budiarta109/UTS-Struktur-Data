@@ -19,13 +19,12 @@ Berikut adalah flowchart yang menggambarkan proses Queue pada sistem parkir:
 
 <img width="940" height="766" alt="image" src="https://github.com/user-attachments/assets/23a18b5f-0fcc-49f7-acb2-08f3f8dd0aa5" />
 ## 2.Alur Sistem
+
 •Input : Nomor plat dan jenis kendaraan (mobil/motor)
-
 •Proses : Enqueue → Pengecekan kapasitas → Dequeue + hitung durasi & biaya
-
 •Output : Status parkiran, struk biaya, dan riwayat parkir
 
-## 3.Pseudocode
+##3.Pseudocode
 text
 Enqueue(plat, jenis):
     Jika queue penuh → Error
