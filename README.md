@@ -19,13 +19,11 @@ Berikut adalah flowchart yang menggambarkan proses Queue pada sistem parkir:
 
 <img width="940" height="766" alt="image" src="https://github.com/user-attachments/assets/23a18b5f-0fcc-49f7-acb2-08f3f8dd0aa5" />
 ## 2.Alur Sistem
-
 •Input : Nomor plat dan jenis kendaraan (mobil/motor)
 •Proses : Enqueue → Pengecekan kapasitas → Dequeue + hitung durasi & biaya
 •Output : Status parkiran, struk biaya, dan riwayat parkir
 
-##3.Pseudocode
-text
+## 3.Pseudocode
 Enqueue(plat, jenis):
     Jika queue penuh → Error
     Jika plat sudah ada → Error
@@ -36,4 +34,8 @@ Dequeue():
     Ambil kendaraan dari depan
     Hitung durasi dan biaya
     Simpan ke riwayat
+# 4.KESIMPULAN
+Implementasi Sistem Parkir Kendaraan berbasis Queue (FIFO) telah berhasil menyelesaikan rumusan masalah yang diajukan. Sistem ini mampu mengelola antrian kendaraan secara terstruktur sesuai prinsip First In First Out, menangani batas kapasitas, serta melakukan perhitungan durasi dan biaya secara otomatis.
+Sistem berjalan sesuai teori struktur data karena operasi enqueue dan dequeue memiliki efisiensi O(1) menggunakan deque. Penggunaan Queue memberikan manfaat utama berupa keadilan urutan pelayanan dan kemudahan pengelolaan antrian pada kasus sistem parkir.
+Meskipun memiliki keterbatasan fleksibilitas, sistem ini sangat sesuai untuk simulasi antrian linier dan dapat dikembangkan lebih lanjut dengan penambahan fitur database atau antarmuka grafis.
 
