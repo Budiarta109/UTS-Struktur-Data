@@ -1,4 +1,9 @@
-## UTS-Struktur-Data
+# LAPORAN-UTS-Struktur-Data
+# Nama Anggota :
+- I Nyoman Budiarta (2501010076)
+- I Gede Wahyu Candra Deanova (2501010079)
+- I Made Suardhita Kusuma (2501010075)
+
 # 1.RUMUSAN MASALAH DAN SOLUSI
 ## 1.Rumusan Masalah
 1.	Bagaimana struktur data Queue dengan prinsip FIFO (First In First Out) dapat diterapkan untuk mengelola antrian kendaraan pada sistem parkir agar proses masuk dan keluar berjalan         secara terurut dan adil?
