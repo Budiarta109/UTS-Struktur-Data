@@ -101,3 +101,46 @@ for i, kendaraan in enumerate(self.queue, 1):
         for i, r in enumerate(self.riwayat, 1):
             print(f"{i:2}. {r['plat']:<12} | {r['jenis'].capitalize():<8} | "
                   f"{r['durasi']:<15} | Rp {int(r['biaya']):,}")
+def main(): 
+    parkir = SistemParkirQueue(kapasitas=15)
+
+    while True:
+        print("\n" + "="*55)
+        print("       SISTEM PARKIR KENDARAAN - VERSI QUEUE (FIFO)")
+        print("="*55)
+        print("1. Masuk Parkir")
+        print("2. Keluar Parkir (Kendaraan pertama yang masuk)")
+        print("3. Tampilkan Isi Parkiran")
+        print("4. Tampilkan Riwayat Parkir")
+        print("5. Keluar Program")
+        print("="*55)
+
+        pilihan = input("\nPilih menu (1-5): ").strip()
+
+        if pilihan == "1":
+            plat = input("Masukkan Nomor Plat: ").strip().upper()
+            jenis = input("Jenis Kendaraan (mobil/motor): ").strip().lower()
+            if jenis not in ["mobil", "motor"]:
+                print("❌ Jenis kendaraan hanya boleh 'mobil' atau 'motor'!")
+                continue
+            parkir.parkir_masuk(plat, jenis)
+
+        elif pilihan == "2":
+            parkir.parkir_keluar()
+
+        elif pilihan == "3":
+            parkir.tampilkan_parkiran()
+
+        elif pilihan == "4":
+            parkir.tampilkan_riwayat()
+
+        elif pilihan == "5":
+            print("Terima kasih telah menggunakan Sistem Parkir Queue!")
+            break
+
+        else:
+            print("❌ Pilihan tidak valid! Silakan pilih 1-5.")
+
+
+if _name_ == "_main_":
+    main() 
