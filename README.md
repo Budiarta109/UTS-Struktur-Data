@@ -1,3 +1,4 @@
+
 # LAPORAN-UTS-Struktur-Data
 # Nama Anggota :
 - I Nyoman Budiarta (2501010076)
@@ -6,9 +7,9 @@
 
 # 1.RUMUSAN MASALAH DAN SOLUSI
 ## 1.Rumusan Masalah
-1.	Bagaimana struktur data Queue dengan prinsip FIFO (First In First Out) dapat diterapkan untuk mengelola antrian kendaraan pada sistem parkir agar proses masuk dan keluar berjalan         secara terurut dan adil?
+1.	Bagaimana struktur data Queue dengan prinsip FIFO (First In First Out) dapat diterapkan untuk mengelola antrian kendaraan pada sistem parkir agar proses masuk dan keluar berjalan secara terurut dan adil?
 2.	Bagaimana implementasi Queue menggunakan collections.deque di Python mampu memberikan efisiensi waktu O(1) pada operasi enqueue dan dequeue dibandingkan penggunaan list biasa?
-3.	Bagaimana sistem parkir berbasis Queue dapat menyelesaikan permasalahan nyata seperti pengelolaan kapasitas slot yang terbatas, pencegahan duplikasi nomor plat, dan perhitungan          durasi serta biaya parkir secara otomatis?
+3.	Bagaimana sistem parkir berbasis Queue dapat menyelesaikan permasalahan nyata seperti pengelolaan kapasitas slot yang terbatas, pencegahan duplikasi nomor plat, dan perhitungan durasi serta biaya parkir secara otomatis?
 ## 2.Solusi yang Ditawarkan
 Sistem yang dibuat menggunakan struktur data Queue untuk mensimulasikan antrian kendaraan. Kendaraan yang masuk pertama kali akan keluar pertama kali (FIFO). Sistem menyediakan pengecekan kapasitas secara real-time, pencegahan duplikat plat, perhitungan durasi dan biaya otomatis, serta penyimpanan riwayat parkir.
 
@@ -45,3 +46,4 @@ Implementasi Sistem Parkir Kendaraan berbasis Queue (FIFO) telah berhasil menyel
 Sistem berjalan sesuai teori struktur data karena operasi enqueue dan dequeue memiliki efisiensi O(1) menggunakan deque. Penggunaan Queue memberikan manfaat utama berupa keadilan urutan pelayanan dan kemudahan pengelolaan antrian pada kasus sistem parkir.
 Meskipun memiliki keterbatasan fleksibilitas, sistem ini sangat sesuai untuk simulasi antrian linier dan dapat dikembangkan lebih lanjut dengan penambahan fitur database atau antarmuka grafis.
 
+[Sistem_Parkir_Berbasis_Queue.pdf](https://github.com/user-attachments/files/27013810/Sistem_Parkir_Berbasis_Queue.pdf)
