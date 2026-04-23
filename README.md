@@ -47,3 +47,4 @@ Sistem berjalan sesuai teori struktur data karena operasi enqueue dan dequeue me
 Meskipun memiliki keterbatasan fleksibilitas, sistem ini sangat sesuai untuk simulasi antrian linier dan dapat dikembangkan lebih lanjut dengan penambahan fitur database atau antarmuka grafis.
 
 [Sistem_Parkir_Berbasis_Queue.pdf](https://github.com/user-attachments/files/27013810/Sistem_Parkir_Berbasis_Queue.pdf)
+https://www.canva.com/design/DAHHrdd5lSA/T4KPTvy9lEYZAJKwjqk6rQ/edit
