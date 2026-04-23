@@ -37,7 +37,7 @@ class SistemParkirQueue:
         print(f"   Slot terisi  : {len(self.queue)}/{self.kapasitas}")
         return True
         
-def parkir_keluar(self):
+    def parkir_keluar(self):
         if self.is_empty():
             print("❌ Parkiran kosong! Tidak ada kendaraan yang bisa keluar.")
             return False
@@ -50,7 +50,7 @@ def parkir_keluar(self):
         durasi = waktu_keluar - kendaraan_keluar['waktu_masuk']
         jam = int(durasi.total_seconds() // 3600)
         menit = int((durasi.total_seconds() % 3600) // 60)
-Hitung biaya
+        # Hitung biaya
         if kendaraan_keluar['jenis'] == "mobil":
             biaya = (jam * 5000) + (menit * 100 if menit > 0 else 0)
         else:  # motor
@@ -87,7 +87,7 @@ Hitung biaya
         print("=" * 65)
         print(f"{'No':<3} {'Plat Nomor':<15} {'Jenis':<10} {'Waktu Masuk':<20}")
         print("=" * 65)
-for i, kendaraan in enumerate(self.queue, 1):
+        for i, kendaraan in enumerate(self.queue, 1):
             print(f"{i:<3} {kendaraan['plat']:<15} {kendaraan['jenis'].capitalize():<10} "
                   f"{kendaraan['waktu_masuk'].strftime('%H:%M:%S')}")
 
@@ -101,6 +101,7 @@ for i, kendaraan in enumerate(self.queue, 1):
         for i, r in enumerate(self.riwayat, 1):
             print(f"{i:2}. {r['plat']:<12} | {r['jenis'].capitalize():<8} | "
                   f"{r['durasi']:<15} | Rp {int(r['biaya']):,}")
+            
 def main(): 
     parkir = SistemParkirQueue(kapasitas=15)
 
@@ -142,5 +143,5 @@ def main():
             print("❌ Pilihan tidak valid! Silakan pilih 1-5.")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main() 
